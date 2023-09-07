@@ -7,4 +7,3 @@ pillow
 IPython
 Gunicorn
 flask
-Gunicorn
