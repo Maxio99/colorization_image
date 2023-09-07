@@ -38,4 +38,4 @@ def colorize():
     return send_file(output_path, mimetype='image/png')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    app.run()
