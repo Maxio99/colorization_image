@@ -1,10 +1,14 @@
+import sys
+# caution: path[0] is reserved for script path (or '' in REPL)
+sys.path.insert(1, 'coloriztaion/colorizers')
+sys.path.insert(2, 'colorizaiton/demo_release')
 import os
 #import torch
 #import argparse
 import matplotlib.pyplot as plt
 from flask import Flask, send_file,request
-from coloriztaion/colorizers import *
-from colorizaiton/demo_release import load_img, preprocess_img, postprocess_tens
+from colorizers import *
+from demo_release import load_img, preprocess_img, postprocess_tens
 
 app = Flask(__name__)
 
